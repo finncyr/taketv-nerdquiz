@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/poshytip/1.2/jquery.poshytip.min.js" integrity="sha512-/WRL6m0vrZwChpCDXLzRVpFqM5FqmF0k5A7NWQ+HvhtUtREs8MemDuFcMfEHZqg53UJmWbrs9aAWl6cDwdDv6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/css/jquery-editable.css" rel="stylesheet"/>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/js/jquery-editable-poshytip.min.js"></script>
+
+        <script src="js/textfit-min.js"></script>
+
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <img src="Nerd_Quiz_L3.png" class="Overlay" id="bgimg" />
+        <div class="div-q">
+            Wo hat Kay schon wieder seine Eier versteckt?
+        </div>
+        <script>
+            $.fn.editable.defaults.mode = 'inline';
+            $(document).ready(function() {
+                textFit(document.getElementsByClassName('div-q'), {alignHoriz: true, alignVert: true, multiLine: true});
+                $('.div-q').editable();
+                $('img').on("click", function() {
+                    console.log("yep.");
+                    textFit(document.getElementsByClassName('div-q'), {alignHoriz: true, alignVert: true, multiLine: true});
+                });
+            });
+        </script>
+    </body>
+</html>
