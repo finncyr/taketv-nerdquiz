@@ -4,7 +4,7 @@ Kleine Anwendung für eine Nerdquiz-L3 Grafik die komplett im Browser bearbeitba
 
 # Anleitung
 
-1. Den kompletten Ordner herunterladen
+1. Den kompletten Ordner herunterladen -> [Hier](https://github.com/finncyr/taketv-nerdquiz/archive/refs/heads/main.zip)
 2. Zip entpacken
 3. In OBS: Browserquelle hinzufügen -> Lokale Datei -> `nerdquiz-l3.html` auswählen
 4. Interagieren drücken
